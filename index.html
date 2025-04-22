@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sherelyn Candilado - Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f4f7f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3 {
+      color: #0b3954;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.2rem;
+    }
+    a {
+      color: #1c6ea4;
+      text-decoration: none;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .section-title {
+      margin-bottom: 0.8rem;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.3rem;
+      cursor: pointer;
+    }
+    .section-content {
+      display: none;
+      margin-top: 1rem;
+    }
+    .active .section-content {
+      display: block;
+    }
+    .toggle-icon {
+      float: right;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sherelyn Candilado</h1>
+    <p>
+      ☎️ +63-976-344-0999 | ✉️ <a href="mailto:sherelyncandilado09@gmail.com">sherelyncandilado09@gmail.com</a><br />
+      🏠 Blk21 Lot2 DLC3, City of San Jose del Monte, Bulacan<br />
+      🔗 <a href="http://linkedin.com/in/sherelyn-candilado" target="_blank">linkedin.com/in/sherelyn-candilado</a>
+    </p>
+    <p><a href="SherelynCandilado-Resume.pdf" download style="display: inline-block; margin-top: 1rem; padding: 10px 20px; background-color: #0b3954; color: #fff; border-radius: 6px; text-decoration: none;">⬇️ Download My Resume (PDF)</a></p>
+  </div>
+
+  <script>
+    function toggleSection(section) {
+      section.classList.toggle('active');
+      const icon = section.querySelector('.toggle-icon');
+      icon.textContent = section.classList.contains('active') ? '-' : '+';
+    }
+  </script>
+</body>
+</html>
